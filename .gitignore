@@ -1,0 +1,6 @@
+*.pyc
+*~
+Makefile
+MANIFEST
+dist/
+build/

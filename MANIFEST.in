@@ -1,0 +1,4 @@
+include COPYING.txt
+include README.txt
+recursive-include python2x *.py
+recursive-include python3x *.py
