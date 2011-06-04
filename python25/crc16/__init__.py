@@ -21,7 +21,7 @@
 
 # trying to import fast implementation
 try:
-    from ._crc16 import *
+    from _crc16 import *
 except ImportError:
     # using the pure python implementation
-    from .crc16pure import *
+    from crc16pure import *

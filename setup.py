@@ -26,13 +26,22 @@ import sys
 
 if __name__ == '__main__':
 
-    baseVersion = 'python' + str(sys.version_info[0]) + 'x'
+    majorVer = int(sys.version_info[0])
+    minorVer = int(sys.version_info[1])
+
+    if majorVer >= 3:
+        baseVersion = "python3x"
+    else:
+        if majorVer == 2 and minorVer >= 6:
+            baseVersion = "python2x"
+        else:
+            baseVersion = "python25"
 
     readmePath = os.path.join(os.path.dirname(__file__), 'README.txt')
     long_description = open(readmePath, "rt").read()
 
     setup(name='crc16',
-          version='0.1.0',
+          version='0.1.1',
           description='Library for calculating CRC16',
           author='Gennady Trafimenkov',
           author_email='gennady.trafimenkov@gmail.com',
@@ -69,11 +78,13 @@ if __name__ == '__main__':
             # "Programming Language :: C",
             "Programming Language :: Python",
             "Programming Language :: Python :: 2",
+            "Programming Language :: Python :: 2.4",
+            "Programming Language :: Python :: 2.5",
             "Programming Language :: Python :: 2.6",
             "Programming Language :: Python :: 2.7",
             "Programming Language :: Python :: 3",
             "Programming Language :: Python :: 3.1",
-            # "Programming Language :: Python :: 3.2",
+            "Programming Language :: Python :: 3.2",
             ],
           long_description=long_description
           )

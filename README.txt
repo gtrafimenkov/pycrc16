@@ -27,16 +27,16 @@ http://code.google.com/p/pycrc16/downloads
 On Linux and other operation systems you should compile the library from
 the source codes.  To do this on Linux use following steps:
 
-* download source tarball, e.g. crc16-0.1.0.tar.gz,
+* download source tarball, e.g. crc16-0.1.1.tar.gz,
   from http://code.google.com/p/pycrc16/downloads
 
 * extract it with command::
 
-    tar -xzf crc16-0.1.0.tar.gz
+    tar -xzf crc16-0.1.1.tar.gz
 
 * compile and install the library::
 
-    cd crc16-0.1.0
+    cd crc16-0.1.1
     python setup.py build
     sudo python setup.py install
 

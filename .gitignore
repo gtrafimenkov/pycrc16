@@ -4,3 +4,4 @@ Makefile
 MANIFEST
 dist/
 build/
+/_tst
