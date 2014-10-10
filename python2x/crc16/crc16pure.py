@@ -81,7 +81,7 @@ def _crc16(data, crc, table):
     return crc & 0xffff
 
 
-def crc16xmodem(data, crc=0):
+def crc16xmodem(data, crc=0xffff):
     """Calculate CRC-CCITT (XModem) variant of CRC16.
     `data`      - data for calculating CRC, must be a string
     `crc`       - initial value
