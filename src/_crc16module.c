@@ -19,6 +19,7 @@
  *
  * **************************************************************************/
 
+#define PY_SSIZE_T_CLEAN
 #include <Python.h>
 
 /* table for calculating CRC
@@ -91,7 +92,7 @@ static PyObject *
 _crc16_crc16xmodem(PyObject *self, PyObject *args)
 {
     const unsigned char* data;
-    int data_len;
+    Py_ssize_t data_len;
     unsigned int crc = 0;
     unsigned int result;
 
