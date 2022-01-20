@@ -41,7 +41,7 @@ if __name__ == '__main__':
     long_description = open(readmePath, "rt").read()
 
     setup(name='crc16',
-          version='0.1.1',
+          version='0.1.2',
           description='Library for calculating CRC16',
           author='Gennady Trafimenkov',
           author_email='gennady.trafimenkov@gmail.com',
